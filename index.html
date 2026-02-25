@@ -3,120 +3,170 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Chamamento para Atribuição de Aulas - URE Caieiras</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #0a3d62, #3c6382);
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #333;
 }
 
+/* CONTAINER */
+
 .container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 40px auto;
-    background: #ffffff;
+    background: white;
+    border-radius: 16px;
     padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    animation: fadeIn 0.8s ease;
 }
+
+/* HEADER */
 
 .header {
     text-align: center;
-    border-bottom: 3px solid #0a3d62;
-    padding-bottom: 20px;
     margin-bottom: 30px;
-}
-
-.header h1 {
-    margin: 0;
-    color: #0a3d62;
-    font-size: 26px;
-}
-
-.header h2 {
-    margin: 10px 0;
-    color: #e58e26;
-    font-size: 22px;
-}
-
-.header h3 {
-    margin: 5px 0;
-    font-weight: normal;
-    color: #555;
-}
-
-.section {
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-.highlight {
-    background: #f1f2f6;
-    padding: 15px;
-    border-left: 5px solid #0a3d62;
-    border-radius: 5px;
-}
-
-.info {
-    background: #eaf2f8;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px 0;
-}
-
-.info strong {
-    color: #0a3d62;
-}
-
-ul {
-    margin-top: 10px;
-}
-
-a {
-    color: #0a3d62;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.links {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 40px;
-    font-weight: bold;
-    color: #0a3d62;
 }
 
 .badge {
     display: inline-block;
-    background: #e58e26;
+    background: linear-gradient(45deg, #ff9800, #ff5722);
     color: white;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
+.header h1 {
+    margin: 5px 0;
+    color: #0d47a1;
+}
+
+.header h2 {
+    margin: 5px 0;
+    color: #ff6f00;
+}
+
+.header h3 {
+    margin: 5px 0;
+    color: #555;
+    font-weight: normal;
+}
+
+/* INFO BOX */
+
+.info-box {
+    background: linear-gradient(135deg, #e3f2fd, #f5faff);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 6px solid #1976d2;
+}
+
+/* DOCUMENT BOX */
+
+.docs {
+    background: #f9fafc;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 6px solid #43a047;
+}
+
+/* BUTTONS */
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+    margin: 12px 0;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* COLOR VARIANTS */
+
+.btn-edital {
+    background: linear-gradient(45deg, #1565c0, #1e88e5);
+}
+
+.btn-lista {
+    background: linear-gradient(45deg, #2e7d32, #43a047);
+}
+
+.btn-talentos {
+    background: linear-gradient(45deg, #6a1b9a, #8e24aa);
+}
+
+.btn-tutor {
+    background: linear-gradient(45deg, #ef6c00, #fb8c00);
+}
+
+.btn-resolucao {
+    background: linear-gradient(45deg, #455a64, #607d8b);
+}
+
+/* HOVER EFFECT */
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    margin-top: 35px;
+    color: #0d47a1;
+    font-weight: 600;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:600px) {
     .container {
-        margin: 10px;
-        padding: 20px;
+        margin: 15px;
+        padding: 25px;
     }
 }
 
 </style>
+
 </head>
 
 <body>
@@ -125,105 +175,114 @@ a:hover {
 
 <div class="header">
 
-<div class="badge">Comunicado Oficial</div>
+<div class="badge">COMUNICADO OFICIAL</div>
 
 <h1>Unidade Regional de Ensino de Caieiras</h1>
 
-<h2>CHAMAMENTO PARA ATRIBUIÇÃO DE AULAS</h2>
+<h2>Chamamento para Atribuição de Aulas</h2>
 
 <h3>Escolas de Tempo Parcial, Ensino Profissionalizante e Professor Tutor – Anos Finais</h3>
 
 </div>
 
+<p>
 
-<div class="section">
+A Unidade Regional de Ensino de Caieiras informa que haverá atribuição de saldo de aulas conforme a 
 
-A Unidade Regional de Ensino de Caieiras, no uso de suas atribuições legais, informa que haverá atribuição de saldo de aulas das Escolas de Tempo Parcial, nos termos da 
-<a href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/699f321ca421e-699f321ca421fresoluo-seduc-n-18-de-4-de-fevereiro-de-2026-dispe-sobre-o-processo-de-atribuio-de-classes-e-aulas-durante-o-ano-aos-docentes-1-pdf.pdf" target="_blank">
-Resolução SEDUC nº 18, de 4 de fevereiro de 2026
-</a>, saldo de aulas do Ensino Profissionalizante e uma vaga para Professor Tutor (Anos Finais), na seguinte conformidade:
+<a href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/699f321ca421e-699f321ca421fresoluo-seduc-n-18-de-4-de-fevereiro-de-2026-dispe-sobre-o-processo-de-atribuio-de-classes-e-aulas-durante-o-ano-aos-docentes-1-pdf.pdf"
+class="btn btn-resolucao"
+target="_blank">
+
+📄 Acessar Resolução SEDUC nº 18/2026
+
+</a>
+
+</p>
+
+<div class="info-box">
+
+<strong>📅 Data:</strong> 27/02/2026<br><br>
+
+<strong>⏰ Horário:</strong> 10h<br><br>
+
+<strong>📍 Local:</strong><br>
+
+E.E Benedito Fagundes Marques<br>
+
+Av. Dos Coqueiros, S/N – Centro – Franco Da Rocha
 
 </div>
 
+<div class="docs">
 
-<div class="info">
-
-<p><strong>Data:</strong> 27 de fevereiro de 2026</p>
-
-<p><strong>Horário:</strong> 10h</p>
-
-<p><strong>Local:</strong> E.E Benedito Fagundes Marques<br>
-Av. Dos Coqueiros, S/N – Centro – Franco Da Rocha</p>
-
-</div>
-
-
-<div class="section highlight">
-
-<strong>Documentos necessários:</strong>
+<strong>📎 Documentos necessários:</strong>
 
 <ul>
 
-<li>Documento de identidade (RG);</li>
+<li>Documento de identidade (RG)</li>
 
-<li>Diploma e/ou certificado de conclusão com histórico escolar;</li>
+<li>Diploma e/ou certificado com histórico</li>
 
-<li>Comprovante de Confirmação de Participação (inscrição) para atribuição 2026 (exceto Ensino Profissionalizante);</li>
+<li>Comprovante de inscrição (exceto Ensino Profissionalizante)</li>
 
 </ul>
 
 </div>
 
+<br>
 
-<div class="section">
+<h3>🎓 Ensino Profissionalizante</h3>
 
-O saldo de aulas das Escolas de Tempo Parcial será disponibilizado em breve.
+<div class="buttons">
+
+<a class="btn btn-edital"
+href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/edital-de-atribuio-educao-profissional-2026.pdf"
+target="_blank">
+
+📄 Abrir Edital
+
+</a>
+
+<a class="btn btn-lista"
+href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/aprovados-proc-seletivo-pss-fundao-getlio-vargas.xlsx"
+target="_blank">
+
+📊 Lista de Aprovados
+
+</a>
+
+<a class="btn btn-talentos"
+href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/banco-de-talentos-dia-19-de-fevereiro-2026.pdf"
+target="_blank">
+
+🏆 Banco de Talentos
+
+</a>
 
 </div>
 
+<br>
 
-<div class="links">
+<h3>👨‍🏫 Professor Tutor – 1 vaga</h3>
 
-<p>
+<div class="buttons">
 
-<strong>Ensino Profissionalizante:</strong><br>
+<a class="btn btn-tutor"
+href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/ure-caieiras-deferidos_tutor-anos-finais.pdf"
+target="_blank">
 
-<a href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/edital-de-atribuio-educao-profissional-2026.pdf" target="_blank">
-Edital
-</a> |
+📋 Lista de Docentes Deferidos
 
-<a href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/aprovados-proc-seletivo-pss-fundao-getlio-vargas.xlsx" target="_blank">
-Lista de aprovados
-</a> |
-
-<a href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/banco-de-talentos-dia-19-de-fevereiro-2026.pdf" target="_blank">
-Banco de Talentos
 </a>
-
-</p>
-
-
-<p>
-
-<strong>Professor Tutor – 1 vaga disponível na EE Bairro Jundiaizinho:</strong><br>
-
-<a href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/ure-caieiras-deferidos_tutor-anos-finais.pdf" target="_blank">
-Clique aqui para acessar a lista de docentes deferidos
-</a>
-
-</p>
 
 </div>
-
 
 <div class="footer">
 
 Comissão de Atribuição de Aulas<br>
-
 URE Caieiras
 
 </div>
-
 
 </div>
 

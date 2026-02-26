@@ -86,52 +86,60 @@ body {
     border-left: 6px solid #43a047;
 }
 
-/* BUTTONS */
+/* BUTTON CONTAINER */
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
+/* BUTTON BASE */
+
 .btn {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     text-decoration: none;
-    padding: 16px;
-    margin: 12px 0;
-    border-radius: 10px;
+    padding: 8px 14px;
+    border-radius: 8px;
     color: white;
     font-weight: 600;
-    font-size: 16px;
-    transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 14px;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    min-width: 220px;
+}
+
+/* HOVER */
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    filter: brightness(1.08);
 }
 
 /* COLOR VARIANTS */
 
 .btn-edital {
-    background: linear-gradient(45deg, #1565c0, #1e88e5);
+    background: linear-gradient(45deg, #1565c0, #42a5f5);
 }
 
 .btn-lista {
-    background: linear-gradient(45deg, #2e7d32, #43a047);
+    background: linear-gradient(45deg, #2e7d32, #66bb6a);
 }
 
 .btn-talentos {
-    background: linear-gradient(45deg, #6a1b9a, #8e24aa);
+    background: linear-gradient(45deg, #6a1b9a, #ab47bc);
 }
 
 .btn-tutor {
-    background: linear-gradient(45deg, #ef6c00, #fb8c00);
+    background: linear-gradient(45deg, #ef6c00, #ffa726);
 }
 
 .btn-resolucao {
-    background: linear-gradient(45deg, #455a64, #607d8b);
-}
-
-/* HOVER EFFECT */
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+    background: linear-gradient(45deg, #455a64, #90a4ae);
 }
 
 /* FOOTER */
@@ -189,15 +197,15 @@ body {
 
 A Unidade Regional de Ensino de Caieiras, no uso de suas atribuições legais, informa que haverá atribuição de saldo de aulas das Escolas de Tempo Parcial, nos termos da Resolução SEDUC nº 18, de 4 de fevereiro de 2026, saldo de aulas do Ensino Profissionalizante e uma vaga para Professor Tutor (Anos Finais), na seguinte conformidade:
 
+</p>
+
 <a href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/699f321ca421e-699f321ca421fresoluo-seduc-n-18-de-4-de-fevereiro-de-2026-dispe-sobre-o-processo-de-atribuio-de-classes-e-aulas-durante-o-ano-aos-docentes-1-pdf.pdf"
 class="btn btn-resolucao"
 target="_blank">
 
-📄 Acessar Resolução SEDUC nº 18/2026
+📜 Acessar Resolução SEDUC nº 18/2026
 
 </a>
-
-</p>
 
 <div class="info-box">
 
@@ -218,13 +226,9 @@ Av. Dos Coqueiros, S/N – Centro – Franco Da Rocha
 <strong>📎 Documentos necessários:</strong>
 
 <ul>
-
 <li>Documento de identidade (RG)</li>
-
 <li>Diploma e/ou certificado com histórico</li>
-
 <li>Comprovante de inscrição (exceto Ensino Profissionalizante)</li>
-
 </ul>
 
 </div>
@@ -239,15 +243,15 @@ Av. Dos Coqueiros, S/N – Centro – Franco Da Rocha
 href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/saldo-de-aulas-ciencias-da-natureza-matemtica.pdf"
 target="_blank">
 
-📋 Ciências da Natureza/Matemática
+🧪 Ciências da Natureza/Matemática
 
-</a>    
+</a>
 
 <a class="btn btn-edital"
 href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/saldo-de-aulas-humanas.pdf"
 target="_blank">
 
-📋 Humanas
+🏛️ Humanas
 
 </a>
 
@@ -255,7 +259,7 @@ target="_blank">
 href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/saldo-de-aulas-cdigos-e-linguagens.pdf"
 target="_blank">
 
-📋 Códigos e Linguagens
+📝 Códigos e Linguagens
 
 </a>
 
@@ -263,18 +267,17 @@ target="_blank">
 href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/saldo-aulas-componentes-curriculares-diversos.pdf"
 target="_blank">
 
-📋 Componentes Curriculares Diversos
+📚 Componentes Curriculares Diversos
 
 </a>
 
-</div>    
-   
+</div>
 
 <br>
 
 <h3>🎓 Ensino Profissionalizante</h3>
 
-<div class="buttons">   
+<div class="buttons">
 
 <a class="btn btn-edital"
 href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/edital-de-atribuio-educao-profissional-2026-26022026-corrigido.pdf"
@@ -296,7 +299,7 @@ target="_blank">
 href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/banco-de-talentos-dia-19-de-fevereiro-2026.pdf"
 target="_blank">
 
-🏆 Banco de Talentos
+👥 Banco de Talentos
 
 </a>
 
@@ -304,7 +307,7 @@ target="_blank">
 
 <br>
 
-<h3>👨‍🏫 Professor Tutor – 2 vagas (E.E. Bairro Jundiaizinho - Mairiporã/ E.E. Rogério Levorin - Francisco Morato)</h3>
+<h3>👨‍🏫 Professor Tutor – 2 vagas</h3>
 
 <div class="buttons">
 
@@ -312,7 +315,7 @@ target="_blank">
 href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/ure-caieiras-deferidos_tutor-anos-finais.pdf"
 target="_blank">
 
-📋 Lista de Docentes Deferidos
+👨‍🏫 Lista de Docentes Deferidos
 
 </a>
 
